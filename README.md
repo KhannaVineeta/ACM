@@ -73,15 +73,24 @@ MindFlow is your AI-powered academic assistant that:
 
 ## 🚀 Quick Start
 
-### 1️⃣ Automated Setup (Recommended)
+### Prerequisites
+- Node.js 18+ and npm
+- Git
+
+### 1️⃣ Clone and Install
 
 ```bash
-# Clone and navigate
-cd mindflow
+# Clone the repository
+git clone https://github.com/KhannaVineeta/ACM.git
+cd ACM
 
-# Run automated setup
-chmod +x setup.sh
-./setup.sh
+# Install backend dependencies
+cd backend
+npm install
+
+# Install frontend dependencies
+cd ../frontend
+npm install
 ```
 
 ### 2️⃣ Configure Services
@@ -109,19 +118,25 @@ CANVAS_ACCESS_TOKEN=your_token
 VITE_API_URL=http://localhost:5000/api
 ```
 
-### 3️⃣ Start Development
+### 3️⃣ Start the Application
 
 ```bash
-# Terminal 1 - Backend
+# Start Backend (Terminal 1)
 cd backend
-npm run dev
+npm start
+# Backend runs on http://localhost:5001
 
-# Terminal 2 - Frontend
+# Start Frontend (Terminal 2)
 cd frontend  
 npm run dev
+# Frontend runs on http://localhost:5173
 ```
 
-**Visit:** http://localhost:5173 🎉
+**Visit:** http://localhost:5173
+
+**Default Login:**
+- Email: `demo@sdsu.edu`
+- Password: `demo123`
 
 ---
 
