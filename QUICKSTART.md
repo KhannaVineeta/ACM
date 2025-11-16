@@ -1,14 +1,82 @@
 # 🚀 MindFlow Quick Start
 
-## Installation
+## ⚡ Get Running in 5 Minutes
+
+### Step 1: Clone & Install
 
 ```bash
-# Make setup script executable
-chmod +x setup.sh
+# Clone repository
+git clone https://github.com/KhannaVineeta/ACM.git
+cd ACM
 
-# Run automated setup
-./setup.sh
+# Install backend dependencies
+cd backend
+npm install
+
+# Install frontend dependencies
+cd ../frontend
+npm install
 ```
+
+### Step 2: Configure Environment
+
+**Backend** (`backend/.env`):
+```env
+# Enable demo mode (no database needed!)
+DEMO_MODE=true
+
+# Required
+OPENAI_API_KEY=your_openai_key_here
+JWT_SECRET=your_secret_here
+
+# Optional (for full features)
+SUPABASE_URL=your_supabase_url
+SUPABASE_KEY=your_supabase_key
+```
+
+**Frontend** (`frontend/.env`):
+```env
+VITE_API_URL=http://localhost:5001/api
+```
+
+### Step 3: Start Servers
+
+**Terminal 1 - Backend:**
+```bash
+cd backend
+npm start
+```
+
+**Terminal 2 - Frontend:**
+```bash
+cd frontend
+npm run dev
+```
+
+### Step 4: Access & Login
+
+- URL: http://localhost:5173
+- Email: `demo@sdsu.edu`
+- Password: `demo123`
+
+---
+
+## 🎯 Quick Test
+
+### Try Chat Commands:
+```
+"I have a CS601 assignment due in 2 weeks"
+"Add study time at 6 PM"  
+"What's due next week?"
+```
+
+### Test Features:
+1. Click **"🧪 Testing"** tab
+2. Click "Test Scheduling"
+3. Click "Test Reminder"
+4. Open browser console (F12) to see logs
+
+---
 
 ## Configuration
 
